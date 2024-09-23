@@ -1,5 +1,3 @@
-import com.github.ajalt.clikt.core.CliktCommand
-import com.github.ajalt.clikt.core.subcommands
 import java.io.File
 
 fun main(args: Array<String>) = Vitto().main(args)
