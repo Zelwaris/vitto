@@ -1,18 +1,12 @@
-import java.io.File
-
 fun main(args: Array<String>) = Vitto().main(args)
-
-fun String.runCommand(path: File) {
-    ProcessBuilder(*split(" ").toTypedArray())
-        .directory(path)
-        .inheritIO()
-        .start()
-        .waitFor()
-}
 
 fun String.runCommand() {
     ProcessBuilder(*split(" ").toTypedArray())
         .inheritIO()
         .start()
         .waitFor()
+}
+
+fun println(message: String, startColor: String) {
+    println("${startColor}${message}${RESET}")
 }
