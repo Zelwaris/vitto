@@ -7,6 +7,6 @@ fun String.runCommand() {
         .waitFor()
 }
 
-fun println(message: String, startColor: String) {
+fun printlnClr(message: String, startColor: String = "") {
     println("${startColor}${message}${RESET}")
 }

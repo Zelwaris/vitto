@@ -13,7 +13,7 @@ class Vitto : CliktCommand() {
 
     override fun run() {
         if (path.isNullOrEmpty()) {
-            println("Error:$RESET No path specified!", RED)
+            printlnClr("Error:$RESET No path specified!", RED)
             return
         }
 
@@ -25,6 +25,6 @@ class Vitto : CliktCommand() {
 
         FFmpeg.execute(ffOptions, path!!)
 
-        println("Done!", GREEN)
+        printlnClr("Done!", GREEN)
     }
 }
