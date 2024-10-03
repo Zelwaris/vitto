@@ -1,3 +1,9 @@
+package ffmpeg
+
+import printlnClr
+import runCommand
+import utils.colors.CYAN
+
 abstract class FFmpeg {
     companion object {
         fun execute(input: List<FFmpegOption>, path: String) {

@@ -1,3 +1,5 @@
+package utils.colors
+
 //TODO: This seems like a bad thing to do...
 const val RESET = "\u001B[0m"
 const val RED = "\u001B[31m"

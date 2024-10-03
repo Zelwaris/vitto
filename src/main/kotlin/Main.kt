@@ -1,3 +1,5 @@
+import utils.colors.RESET
+
 fun main(args: Array<String>) = Vitto().main(args)
 
 fun String.runCommand() {
@@ -8,5 +10,5 @@ fun String.runCommand() {
 }
 
 fun printlnClr(message: String, startColor: String = "") {
-    println("${startColor}${message}${RESET}")
+    println("${startColor}${message}$RESET")
 }

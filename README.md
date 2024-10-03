@@ -9,7 +9,7 @@ It's a CLI tool which combines both yt-dlp and ffmpeg and simplifies their usage
 
 ### Prerequisites
 
-This tool requires you to have FFmpeg and yt-dlp installed.
+This tool requires you to have ffmpeg and yt-dlp installed.
 
 ### Developing
 

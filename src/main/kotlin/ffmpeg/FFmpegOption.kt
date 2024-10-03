@@ -1,6 +1,11 @@
-import FFmpegOptionType.*
+package ffmpeg
 
-class FFmpegOption(value: String?, val type: FFmpegOptionType) {
+import ffmpeg.FFmpegOptionType.*
+
+class FFmpegOption(
+    value: String?,
+    private val type: FFmpegOptionType
+) {
     val value = value
         get() {
             if (field == null)
