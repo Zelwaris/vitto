@@ -42,7 +42,7 @@ class YtDlp {
                 return "-o $fileName.%(ext)s"
             }
             if (fileName.isEmpty()) {
-                return "-o $outputPath"
+                return "-o ${outputPath}%(title)s.%(ext)s"
             }
             return "-o $outputPath$fileName.%(ext)s"
         }

@@ -4,7 +4,7 @@ import printlnClr
 import runCommand
 import utils.colors.CYAN
 
-abstract class FFmpeg {
+class FFmpeg {
     companion object {
         fun execute(input: List<FFmpegOption>, path: String) {
             val options = input.mapNotNull { it.value }
